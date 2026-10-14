@@ -1,0 +1,6 @@
+- b4bfa98 Create brief.md
+- 2047b97 overview: connect the six subtopics
+- 15fb66e research: software, ai, mobile
+- a77cfe5 research: networking, cybersecurity, data
+- 6fe630c analysis: misconception and open question
+- 1ef99ad revise: overview
