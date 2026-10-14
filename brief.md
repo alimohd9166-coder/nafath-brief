@@ -43,5 +43,9 @@ Resource: NTIA - The Minimum Elements for an SBOM - https://www.ntia.doc.gov/fil
 
 ## Misconception in My Track
 
+A common wrong belief is that using RPKI means BGP route hijacking can never happen again. Some people think that checking a route's origin means checking its entire journey across the internet. But RPKI-based origin validation only checks whether an Autonomous System is authorized to announce a particular IP prefix. It does not check the complete AS path. RFC 6811 explains this in Section 6, "Security Considerations," where it says this mechanism does not provide path validation. So RPKI is useful, but network operators still need other security measures and good routing policies.
+
 ## Open Question
+
+I would like to learn how a telecom provider in Oman checks BGP announcements in real time. I would also verify how engineers handle invalid RPKI results without accidentally blocking legitimate internet traffic.
 
