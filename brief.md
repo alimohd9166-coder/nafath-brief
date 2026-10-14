@@ -25,9 +25,21 @@ Resource: OWASP Mobile Application Security Verification Standard - https://mas.
 
 ## Networking
 
+On the internet, BGP helps networks choose routes. In a BGP hijack, someone falsely announces IP addresses that belong to another network. Other networks may trust the announcement and send traffic the wrong way. RPKI uses signed Route Origin Authorizations (ROAs) to check which Autonomous System (AS) is allowed to announce an IP prefix. Networks can reject invalid routes to reduce hijacks. However, RPKI origin validation does not check the full AS path, so it cannot stop every attack.
+
+Resource: RFC 6811 - BGP Prefix Origin Validation - https://www.rfc-editor.org/rfc/rfc6811
+
 ## Cybersecurity
 
+Log4Shell (CVE-2021-44228) was a serious weakness in Apache Log4j, a Java logging library used by many applications. In affected versions, attackers could put special text into information that gets logged. The JNDI lookup feature could then load and run malicious code from an attacker-controlled server. It was rated critical, with a 10.0 CVSS score, because remote code execution could happen without a login. Apache released fixed versions, and organizations needed to update their vulnerable Log4j software.
+
+Resource: Apache Logging Services - Security - https://logging.apache.org/security.html
+
 ## Data
+
+An SBOM, or Software Bill of Materials, is like an ingredient list for software. It tells a company which components are inside an application, so vulnerable libraries can be found more quickly. The NTIA's 2021 minimum elements include seven data fields: supplier name, component name, component version, other unique identifiers, dependency relationship, author of the SBOM data, and timestamp. This helps companies understand software supply chain risks and identify which components might need security updates.
+
+Resource: NTIA - The Minimum Elements for an SBOM - https://www.ntia.doc.gov/files/ntia/publications/sbom_minimum_elements_report.pdf
 
 ## Misconception in My Track
 
